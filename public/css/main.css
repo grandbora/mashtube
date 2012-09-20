@@ -1,0 +1,114 @@
+.horizontal {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.oneLine {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+html,body {
+    background-color:#000000;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigationContainer {
+    background-color:#dddddd;
+}
+
+.contentContainer .createLayout{background-color:#efefef;}
+.contentContainer .createLayout .resultView,
+.contentContainer .createLayout .playListContainer .playlistPlaceHolder {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.stageContainer .player{padding:10px; text-align:center;}
+.createLayout .stageContainer #cropper{width: 400px;}
+
+.surveyContainer .survey{font-family:'Orbitron',sans-serif; font-size:36px; font-weight:900; color:#FF1100; text-align:center; padding-top:100px;}
+.surveyContainer .survey .answer{
+    cursor: pointer;
+    padding: 15px;
+}
+.surveyContainer .survey .answer.yes:hover{
+    color: #FFFFFF;
+}
+.surveyContainer .survey .answer.no:hover{
+    color: #FFFFFF;
+}
+.surveyContainer .survey .answer.yes{
+    color: #99FF33;
+}
+.surveyContainer .survey .answer.no{
+    color: #003333;
+}
+.surveyContainer .survey .description{
+    font-size: 18px;
+    font-weight: 400;
+    color: #33EEDD;
+    width: 90%;
+    padding: 10px;
+}
+.surveyContainer .survey .description p{
+    padding: 2px;
+}
+.surveyContainer .survey input, .surveyContainer .survey textarea{
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    width: 400px;
+    border: 1px red solid;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 5px;
+    margin: -1px;
+}
+.surveyContainer .survey .watermark{
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 5px;
+}
+.surveyContainer .survey #email{
+}
+.surveyContainer .survey #comment{
+    height: 80px;
+}
+.surveyContainer .survey #submit:hover{
+    color: #FFFFFF;
+}
+.surveyContainer .survey #submit, .surveyContainer .survey #replay{
+    color: #99FF33;
+    padding: 10px;
+    cursor: pointer;
+}
+.surveyContainer .links{
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+}
+.surveyContainer .links ul{
+    list-style-type: none;
+}
+.surveyContainer .links ul li{
+    font-weight: 400;
+    padding: 5px;
+}
+.surveyContainer .links ul li a:hover{
+    color: #FFFFFF;
+}
+
+.searchContainer {
+    background-color:#9f87e7;
+}
+
+.playListContainer {}
+.playListContainer .droppable{min-width:200px; height:150px;}

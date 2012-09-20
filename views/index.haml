@@ -1,0 +1,22 @@
+%html
+    %head
+        %title MashTube
+        %link{:rel => "StyleSheet", :href => "css/main.css", :type => "text/css"}
+        %link{:rel => "StyleSheet", :href => "css/jquery-ui-1.8.23.custom.css", :type => "text/css"}
+        %link{:rel => "StyleSheet", :href => "http://fonts.googleapis.com/css?family=Orbitron:400,900", :type => "text/css"}
+
+        :javascript
+            var App;
+            var globalConfig = {
+                isDev: #{locals[:isDev]},
+                defaultMash: '#{locals[:defaultMash]}'
+            };
+
+        %script{:type => "text/javascript", :"data-main" => "js/main", :src => "js/vendor/require.js"}
+
+        %meta{:property => "og:type", :"content" => "website"}
+        %meta{:property => "og:title", :"content" => "MashTube"}
+        
+    %body
+        -# %div.navigationContainer
+        %div.contentContainer
